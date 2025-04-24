@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import "./footer.css";
-import contactImage from "../../assets/contact-image.png";
-import CopyRight from "../../assets/copyright.png";
+import Logo from "../../assets/logo.png";
+import MediaIcon from "../../assets/medias.png";
+import Mug from "../../assets/mug.png";
 
 const Footer = () => {
   const [formData, setFormData] = useState({
@@ -20,30 +21,34 @@ const Footer = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Form submitted with data:", formData);
-
-    setFormData({
-      name: "",
-      email: "",
-      message: "",
-    });
     alert("Your message has been sent!");
+    setFormData({ name: "", email: "", message: "" });
   };
 
   return (
     <div className="contact-section">
-      <div className="image-section">
-        <img src={contactImage} alt="Contact" className="contact-image" />
-        <img src={CopyRight} alt="copyrightImg" className="copyright-image" />
+      <div className="left-side">
+        <div className="contactImage-container">
+          <img src={Logo} alt="logo" className="logo-image" />
+
+          <p class="logoDesc">
+            Downstairs is your daily escape. A curated cafe
+            <span class="line-break">
+              experience where premium bakes meet honest brews.
+            </span>
+          </p>
+
+          <img src={MediaIcon} alt="icons" className="media-icons" />
+          <img src={Mug} alt="coffeemug" className="mug-image" />
+        </div>
       </div>
 
       <form className="contactForm" onSubmit={handleSubmit}>
         <h2 className="formTitle">Send us a message</h2>
 
         <div className="form-group">
-          <label htmlFor="name">Name</label>
+          <label>Name</label>
           <input
-            type="text"
             name="name"
             value={formData.name}
             onChange={handleChange}
@@ -53,32 +58,37 @@ const Footer = () => {
         </div>
 
         <div className="form-group">
-          <label htmlFor="email">Email</label>
+          <label>E-mail</label>
           <input
             type="email"
             name="email"
             value={formData.email}
             onChange={handleChange}
-            placeholder="Enter your e-mail"
+            placeholder="Enter your email"
             required
           />
         </div>
 
         <div className="form-group">
-          <label htmlFor="message">Message</label>
+          <label>Message</label>
           <textarea
             name="message"
             value={formData.message}
             onChange={handleChange}
             placeholder="What would you like to say?"
             required
-          ></textarea>
+          />
         </div>
 
         <div className="form-group">
           <button type="submit">Send Message</button>
         </div>
       </form>
+
+      <div className="footer">
+        <hr className="custom-divider" />
+        <p className="copyDesc">&copy; 2025 Downstairs. Halaal Certified.</p>
+      </div>
     </div>
   );
 };
