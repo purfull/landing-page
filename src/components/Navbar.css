@@ -1,0 +1,200 @@
+.navbar-component {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 30px;
+    align-items: center;
+    background-color: #FFFBF0;
+
+
+}
+
+.navbar-logo {
+    display: flex;
+    justify-content: center;
+    width: 20%;
+}
+
+.navbar-links {
+    display: flex;
+    justify-content: space-around;
+    /* width: 55%; */
+    align-items: center;
+}
+
+.navbar-links-item {}
+
+.navbar-links-button {
+    background: black;
+    color: white;
+    padding: 10px;
+    border-radius: 17px;
+    width: 8rem;
+}
+
+
+
+.coffee-group-container {
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
+    /* width: 100vw; */
+    /* justify-content: center;
+    justify-items: center;
+    margin-top: 30px; */
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    gap: 2rem;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3rem 0rem;
+    background-color: #fff4e6;
+}
+
+.downstairs-cake-container {
+    margin-top: 10px;
+}
+
+.down-stairs-button {
+    margin-bottom: 30px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 2px solid #A47149;
+    color: #A47149;
+    background-color: hsla(27, 38%, 46%, 0.1);
+}
+
+.honest-brews {
+    font-size: 30px;
+}
+
+.premium-bakes {
+    font-size: 30px;
+    color: #A47149;
+    margin-bottom: 30px;
+}
+
+.rituals-container {
+    font-size: 30px;
+    color: #A47149;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.about-section {
+    background-color: #144734;
+    color: white;
+    text-align: center;
+    padding: 4rem 1rem;
+}
+
+.about-section h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.about-section p {
+    font-size: 1rem;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.card {
+    background-color: #fef5e7;
+    width: 280px;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    box-shadow: 8px 8px 0px rgba(0, 0, 0, 0.2);
+    transform: rotate(-2deg);
+    transition: transform 0.3s ease;
+}
+
+.card:nth-child(2) {
+    transform: rotate(0deg);
+}
+
+.card:nth-child(3) {
+    transform: rotate(2deg);
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card h3 {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+.card p {
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+.quote-section {
+    /* background-color: #fff4e6; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    flex-wrap: wrap;
+
+    position: absolute;
+    top: 88%;
+    left: 10%;
+    width: 60%;
+
+}
+
+.quote-text {
+    font-size: 1.7rem;
+    font-style: italic;
+    max-width: 600px;
+    margin-bottom: 1rem;
+
+    background: #fff4e6;
+    padding: 2rem 2rem;
+    border-radius: 10px;
+    /* border-radius-left-top: 10px; */
+    width: 65%;
+}
+
+.quote-img {
+    max-width: 250px;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.quote-img img {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+@media (max-width: 768px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .quote-section {
+        flex-direction: column;
+        text-align: center;
+    }
+    .coffee-group-container {
+        grid-template-columns: 1fr;
+      }
+
+      .coffee-cup{
+        width: 300px;
+      }
+}
+
