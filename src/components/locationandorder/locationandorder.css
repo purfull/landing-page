@@ -1,0 +1,455 @@
+* {
+  margin: 0;
+}
+
+.location-order-container {
+  height: 160vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #FFFBF0;
+}
+
+.map-container-mobile {
+  display: none;
+}
+
+/* INFO SECTION */
+.info-section {
+  height: 60%;
+  width: 95%;
+  background-color: #FFFBF0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.map-container {
+  height: 80%;
+  width: 38%;
+  /* border: 1px solid #A47149;
+  border-radius: 40px; */
+}
+
+.address-section {
+  height: 90%;
+  width: 45%;
+}
+
+.visit-button-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 20%;
+
+  .icon-cloud {
+    margin-right: 5%;
+    margin-top: 28%;
+  }
+}
+
+.visit-button {
+  border: 1px solid #A47149;
+  border-radius: 999px;
+  padding: 12px 30px;
+  margin-left: 3%;
+  background-color: rgba(164, 113, 73, 0.3);
+  /* 30% opacity */
+  color: #A47149;
+  font-size: 15px;
+}
+
+.location-info {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.location-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: none;
+  border: none;
+  font-size: 28px;
+  color: #A47149;
+}
+
+.address-text {
+  font-size: 20px;
+  line-height: 35px;
+  letter-spacing: 3px;
+  padding: 20px;
+  color: #A47149;
+}
+
+/* HOURS */
+.operating-hours {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 35px;
+  padding: 18px;
+}
+
+.hours-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 28px;
+  color: #A47149;
+}
+
+.hours-row {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  color: #8C715F;
+}
+
+/* ORDER SECTION */
+.order-section {
+  height: 35%;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #FFFBF0;
+}
+
+.highlight-button {
+  border: 1px solid #A47149;
+  border-radius: 999px;
+  padding: 15px 26px;
+  background-color: rgba(164, 113, 73, 0.3);
+  /* 30% opacity */
+  color: #A47149;
+  font-size: 15px;
+}
+
+.whatsapp-button {
+  background-color: #29A71A;
+  color: white;
+  border: none;
+  border-radius: 999px;
+  padding: 15px 26px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.order-heading {
+  color: #6F4E37;
+  font-size: 52px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.order-description {
+  font-size: 20px;
+  color: #8C715F;
+  font-weight: 500;
+  text-align: center;
+}
+
+.icon {
+  height: 24px;
+  width: 24px;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .location-order-container {
+    flex-direction: column;
+    height: auto;
+    padding: 20px 0;
+  }
+
+  .info-section {
+    flex-direction: column;
+    height: auto;
+    gap: 30px;
+    padding: 10px 0;
+  }
+
+  .map-container,
+  .address-section {
+    width: 90%;
+    height: auto;
+  }
+
+  .visit-button-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: auto;
+    gap: 15px;
+  }
+
+  .location-header,
+  .hours-header {
+    font-size: 24px;
+    flex-wrap: wrap;
+  }
+
+  .address-text {
+    font-size: 16px;
+    line-height: 28px;
+    padding: 10px;
+    letter-spacing: 1px;
+  }
+
+  .operating-hours {
+    gap: 20px;
+    padding: 10px;
+  }
+
+  .hours-row {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .order-section {
+    height: auto;
+    width: 100%;
+    gap: 20px;
+    padding: 20px 10px;
+  }
+
+  .order-heading {
+    font-size: 32px;
+    padding: 0 10px;
+  }
+
+  .order-description {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+
+  .highlight-button,
+  .whatsapp-button {
+    font-size: 14px;
+    padding: 12px 20px;
+    width: fit-content;
+  }
+
+  .whatsapp-button {
+    justify-content: center;
+  }
+
+  .icon {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+
+
+
+/* Tablet: 769px - 1023px */
+@media (min-width: 769px) and (max-width: 1023px) {
+  .location-order-container {
+    flex-direction: column;
+    height: auto;
+    padding: 30px 0;
+  }
+
+  .info-section {
+    flex-direction: column;
+    height: auto;
+    gap: 40px;
+    padding: 15px 0;
+  }
+
+  .map-container {
+    width: 85%;
+    height: 35vh;
+  }
+
+  .address-section {
+    width: 85%;
+    height: auto;
+  }
+
+  .visit-button-wrapper {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+    padding: 10px 0;
+  }
+
+  .location-header,
+  .hours-header {
+    font-size: 26px;
+  }
+
+  .address-text {
+    font-size: 18px;
+    line-height: 30px;
+    padding: 15px;
+    letter-spacing: 1.5px;
+  }
+
+  .operating-hours {
+    gap: 25px;
+    padding: 15px;
+  }
+
+  .hours-row {
+    width: 90%;
+    font-size: 18px;
+  }
+
+  .order-section {
+    height: auto;
+    width: 95%;
+    gap: 35px;
+    padding: 35px 20px;
+  }
+
+  .order-heading {
+    font-size: 40px;
+    padding: 0 10px;
+    text-align: center;
+  }
+
+  .order-description {
+    font-size: 18px;
+    padding: 0 10px;
+  }
+
+  .highlight-button,
+  .whatsapp-button {
+    font-size: 15px;
+    padding: 14px 22px;
+    width: fit-content;
+  }
+
+  .icon {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+
+
+
+
+/* Mobile: max-width: 768px */
+@media (max-width: 768px) {
+  .location-order-container {
+    flex-direction: column;
+    height: auto;
+    padding: 20px 0;
+  }
+
+  .info-section {
+    flex-direction: column;
+    height: auto;
+    gap: 50px;
+    padding: 30px 0;
+  }
+
+  .icon-cloud {
+    display: none;
+
+  }
+
+  .map-container {
+    width: 90%;
+    height: auto;
+    display: none;
+  }
+
+  .map-container-mobile {
+    display: block;
+
+  }
+
+  .address-section {
+    width: 90%;
+    height: auto;
+  }
+
+  .visit-button-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: auto;
+    gap: 15px;
+
+    .visit-button {
+      margin-bottom: 4%;
+    }
+  }
+
+  .location-header,
+  .hours-header {
+    font-size: 24px;
+    flex-wrap: wrap;
+  }
+
+  .address-text {
+    font-size: 16px;
+    line-height: 28px;
+    padding: 10px;
+    letter-spacing: 1px;
+  }
+
+  .operating-hours {
+    gap: 20px;
+    padding: 10px;
+  }
+
+  .hours-row {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .order-section {
+    height: auto;
+    width: 100%;
+    gap: 35px;
+    padding: 40px 10px;
+  }
+
+  .order-heading {
+    font-size: 30px;
+    padding: 0 10px;
+  }
+
+  .order-description {
+    font-size: 15px;
+    padding: 0 10px;
+  }
+
+  .highlight-button,
+  .whatsapp-button {
+    font-size: 14px;
+    padding: 12px 20px;
+    width: fit-content;
+  }
+
+  .whatsapp-button {
+    justify-content: center;
+  }
+
+  .icon {
+    width: 20px;
+    height: 20px;
+  }
+}

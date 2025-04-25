@@ -3,13 +3,14 @@
     background-color: #FFFBF0;
     justify-content: space-between; 
     align-items: stretch;
-    height: 120vh; 
+    /* height: 120vh;  */
     gap:40px;
     margin:0;
     padding: 0;
     box-sizing: border-box;
     flex-wrap: nowrap; 
     overflow-x: hidden;
+    
 }
 .portion1 {
     flex: 0 0 40%;
@@ -62,7 +63,7 @@
 .menuDesc{
     color:#6F4E37;
     font-size: 40px;
-    line-height: 135%;
+    /* line-height: 135%; */
     font-family: 'Cormorant Garamond', serif;
     display: flex;
     margin-bottom: 2rem;
@@ -146,7 +147,8 @@
   
   @media (min-width: 769px) {
     .menu-highlights {
-      padding: 40px; 
+      padding: 40px;
+      padding-top: 30vh; 
     }
     .portion1{
         padding-left: 50px;
@@ -154,6 +156,7 @@
     }
     .grid-container-2{
         padding-right: 40px;
+        grid-template-rows: 1fr;
     }
     .menu-button{
         margin-top: 3rem;

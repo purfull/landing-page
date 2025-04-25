@@ -25,22 +25,22 @@ const NavBarComp = () => {
                 <div className='downstairs-cake-container'>
                     <button className='down-stairs-button'>Down stairs</button>
                     <div className='premium-bakes'>Premium Bakes.</div>
-                    <div>
+                    <div style={{display: "flex"}}>
                         <div>
                             <div className='honest-brews'>Honest Brews.</div>
                             <img className='coffee-cup' src={'/UnderLine.png'} alt="Coffee Cup" width={'173px'} />
                         </div>
-                        <span style={{ fontSize: '30px', marginLeft: '5px' }}>Daily</span>
+                        <span className='premium-bakes' style={{ fontSize: '30px', marginLeft: '5px', marginBottom: "0" }}>Daily</span>
 
                     </div>
                     <div className='rituals-container'>Rituals.</div>
-                    <button className='navbar-links-button'>View Menu</button>
+                    <button className='navbar-links-button'>View Our Menu</button>
 
 
                 </div>
 
                 <div>
-                    <img className='coffee-cup' src={'/CofeeGrp.svg'} alt="Coffee Cup" />
+                    <img className='coffee-cup' src={'/CofeeGrp.png'} alt="Coffee Cup" />
                 </div>
 
             </div>
