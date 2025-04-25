@@ -5,7 +5,7 @@ const NavBarComp = () => {
         <div>
             <div className="navbar-component">
                 <div className='navbar-logo' >
-                    <img src="/downstairsLOGO.svg" />
+                    <img src="/downstairsLOGO.png" />
                 </div>
                 <div className='navbar-links'>
                     <div className='navbar-links-item'>
