@@ -1,6 +1,5 @@
 import { useState } from 'react'
 // import './App.css'
-import Hero from './components/hero/Hero'
 import NavBarComp from './components/Navbar.jsx'
 
 function App() {
@@ -9,7 +8,6 @@ function App() {
   return (
     <>
       <NavBarComp />
-      <Hero />
     </>
   )
 }
