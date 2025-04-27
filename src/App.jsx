@@ -12,13 +12,13 @@ function App() {
 
   return (
     <>
-      <NavBarComp />
+      <NavBarComp /> 
       
       <Menu />
       <Testimonial />
       <Calledtoaction />
       <LocationAndOrder />
-      <Footer />
+       <Footer />
     </>
   )
 }

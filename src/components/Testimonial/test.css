@@ -152,3 +152,142 @@
 
 
 
+
+
+@media (max-width: 1024px) {
+  .testimonial-card {
+    flex-direction: column;
+    height: auto;
+    padding: 2rem 1rem;
+    gap: 1.5rem;
+  }
+
+  .testimonial-left {
+    transform: rotate(0deg);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .testimonial-image-wrapper {
+    transform: rotate(0deg);
+    width: 80%;
+  }
+
+  .testimonial-image {
+    transform: rotate(0deg);
+    width: 100%;
+    height: auto;
+  }
+
+  .testimonial-right {
+    margin-left: 0;
+    flex: none;
+    text-align: center;
+  }
+
+  .testimonial-feedback {
+    font-size: 1.1rem;
+  }
+
+  .testimonial-name {
+    font-size: 1rem;
+  }
+
+  .testimonial-vibe {
+    font-size: 0.9rem;
+  }
+
+  .ray-image,
+  .arrow-image,
+  .smile-image {
+    display: none; /* Hide decorative images on tablet */
+  }
+
+  .testimonial-wrapper .slick-prev,
+  .testimonial-wrapper .slick-next {
+    top: unset;
+    bottom: 0;
+    transform: translateY(50%);
+  }
+
+  .testimonial-wrapper .slick-prev {
+    right: 20%;
+  }
+
+  .testimonial-wrapper .slick-next {
+    right: 10%;
+  }
+}
+
+/* mobile design*/
+
+@media (max-width: 768px) {
+  .testimonial-card {
+    flex-direction: column;
+    height: auto;
+    padding: 2rem 1rem;
+    gap: 1.5rem;
+  }
+
+  .testimonial-left {
+    transform: rotate(0deg);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .testimonial-image-wrapper {
+    transform: rotate(0deg);
+    width: 90%;
+  }
+
+  .testimonial-image {
+    transform: rotate(0deg);
+    width: 100%;
+    height: auto;
+  }
+
+  .testimonial-right {
+    margin-left: 0;
+    flex: none;
+    text-align: center;
+  }
+
+  .testimonial-tagline span {
+    font-size: 0.75rem;
+  }
+
+  .testimonial-feedback {
+    font-size: 1rem;
+  }
+
+  .testimonial-name {
+    font-size: 0.9rem;
+  }
+
+  .testimonial-vibe {
+    font-size: 0.8rem;
+  }
+
+  .ray-image,
+  .arrow-image,
+  .smile-image {
+    display: none;
+  }
+
+  .testimonial-wrapper .slick-prev,
+  .testimonial-wrapper .slick-next {
+    width: 28px;
+    height: 28px;
+    bottom: -15px;
+  }
+
+  .testimonial-wrapper .slick-prev {
+    right: 18%;
+  }
+
+  .testimonial-wrapper .slick-next {
+    right: 8%;
+  }
+}
