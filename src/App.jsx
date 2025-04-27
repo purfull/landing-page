@@ -12,9 +12,10 @@ function App() {
 
   return (
     <>
-      <NavBarComp /> 
-      
-      <Menu />
+      <NavBarComp />
+      <div className='menu-container'>
+        <Menu />
+      </div>
       <Testimonial />
       <Calledtoaction />
       <LocationAndOrder />
