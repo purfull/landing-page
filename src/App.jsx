@@ -13,8 +13,9 @@ function App() {
   return (
     <>
       <NavBarComp />
-      
-      <Menu />
+      <div className='menu-container'>
+        <Menu />
+      </div>
       <Testimonial />
       <Calledtoaction />
       <LocationAndOrder />
