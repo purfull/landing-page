@@ -180,7 +180,7 @@
   background-color: #FFFBF0;
   justify-content: space-between;
   align-items: stretch;
-  height: 120vh;
+  height: 100vh;
   gap: 40px;
   margin: 0;
   padding: 0;
@@ -335,7 +335,7 @@
 
   .portion1 {
     padding-left: 50px;
-    margin-bottom: 120px;
+    /* margin-bottom: 120px; */
   }
 
   .grid-container-2 {
