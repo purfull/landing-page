@@ -25,7 +25,7 @@ const Footer = () => {
     setFormData({ name: "", email: "", message: "" });
   };
 
-  return (
+  return ( 
     <div className="contact-section">
       <div className="left-side">
         <div className="contactImage-container">

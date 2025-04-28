@@ -6,7 +6,7 @@ const Calledtoaction = () => {
             <div className="cta-wrapper">
                 {/* Left side text section */}
                 <div className="cta-text-area">
-                    <div className="cta-text-content">
+                    <div className="cta-text-content"> 
                         <button className="cta-category-btn">Ambience & Lifestyle</button>
                         <h1 className="cta-heading">More than a café. It's a mood.</h1>
                         <p className="cta-description">Step inside and discover a space curated for slow sips, inspired thinking, and meaningful connection. Every corner of Downstairs is designed to reflect comfort, creativity, and the quiet luxury of everyday rituals.</p>

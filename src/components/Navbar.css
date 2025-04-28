@@ -51,14 +51,17 @@
     align-items: center;
 }
 
-.navbar-links-item {}
+.navbar-links-item {
+    font-size: 20px;
+}
 
 .navbar-links-button {
+    font-size: 16px;
     background: black;
     color: white;
-    padding: 10px;
+    padding: 10px 16px;
     border-radius: 25px;
-    width: 8rem;
+    /* width: 8rem; */
 }
 
 /* Hamburger icon - hidden on desktop */
@@ -151,6 +154,7 @@
 }
 
 .down-stairs-button {
+    font-size: 16px;
     margin-bottom: 30px;
     padding: 10px 16px;
     border-radius: 20px;
@@ -160,11 +164,11 @@
 }
 
 .honest-brews {
-    font-size: 50px;
+    font-size: 72px;
 }
 
 .premium-bakes {
-    font-size: 50px !important;
+    font-size: 72px !important;
     color: #6F4E37;
     margin-bottom: 30px;
 }
@@ -174,7 +178,7 @@
 }
 
 .rituals-container {
-    font-size: 40px;
+    font-size: 72px;
     color: #6F4E37;
     margin-top: 30px;
     margin-bottom: 30px;
@@ -188,13 +192,14 @@
 }
 
 .about-section h2 {
-    font-size: 2rem;
+    font-size: 48px;
+    font-weight: bold;
     margin-bottom: 0.5rem;
 }
 
 .about-section p {
-    font-size: 1rem;
-    max-width: 600px;
+    font-size: 24px;
+    max-width: 800px;
     margin: 0 auto 2rem;
 }
 
@@ -241,12 +246,12 @@
 }
 
 .card h3 {
-    margin-top: 1rem;
+    margin-top: 28px;
     font-size: 1.2rem;
 }
 
 .card p {
-    font-size: 0.9rem;
+    font-size: 16px;
     margin-top: 0.5rem;
 }
 
@@ -261,20 +266,20 @@
 
     position: absolute;
     top: 78%;
-    left: 10%;
-    width: 80%;
+    left: 2.5%;
+    width: 95%;
 
 }
 
 .quote-text {
-    font-size: 1.7rem;
+    font-size: 40px;
     font-style: italic;
-    max-width: 600px;
+    /* max-width: 800px; */
     margin-bottom: 1rem;
 
-    background: #fff4e6;
+    background: #fffbf0;
     padding: 2rem 2rem;
-    border-radius: 10px;
+    border-radius: 10px 0 0 0;
     /* border-radius-left-top: 10px; */
     width: 65%;
 }
@@ -365,7 +370,7 @@
     }
 
     .navbar-links-button {
-        font-size: 14px;
+        font-size: 16px;
         padding: 10px;
     }
 }

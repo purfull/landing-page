@@ -44,7 +44,7 @@ const NavBarComp = () => {
                     <div style={{ display: "flex" }}>
                         <div>
                             <div className='honest-brews'>Honest Brews.</div>
-                            <img className='coffee-cup' src={'/UnderLine.png'} alt="Coffee Cup" style={{ width: '100%', maxWidth: '173px' }} />
+                            <img className='coffee-cup' src={'/UnderLine.png'} alt="Coffee Cup" style={{ width: '100%', maxWidth: '373px' }} />
                         </div>
                         <span className='premium-bakes' style={{ fontSize: '30px', marginLeft: '5px', marginBottom: "0" }}>Daily</span>
 
@@ -55,7 +55,7 @@ const NavBarComp = () => {
 
                 </div>
 
-                <div>
+                <div style={{textAlign: 'center'}}>
                     <img className='coffee-cup' src={'/CofeeGrp.png'} alt="Coffee Cup" />
                 </div>
 
