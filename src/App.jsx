@@ -4,6 +4,12 @@ import NavBarComp from "./components/Navbar.jsx";
 import Menu from "./components/Menu/menu.jsx";
 import Footer from "./components/Footer/footer.jsx";
 import Testimonial from "./components/Testimonial/test.jsx";
+import NavBarComp from "./components/Navbar.jsx";
+import Menu from "./components/Menu/menu.jsx";
+import Footer from "./components/Footer/footer.jsx";
+import Calledtoaction from "./components/cta/calledtoactiongrid.jsx";
+import LocationAndOrder from "./components/locationandorder/locationandorder.jsx";
+import Testimonial from "./components/Testimonial/test.jsx";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -11,9 +17,12 @@ function App() {
   return (
     <>
       <NavBarComp />
-
-      <Menu />
+      <div className="menu-container">
+        <Menu />
+      </div>
       <Testimonial />
+      <Calledtoaction />
+      <LocationAndOrder />
       <Footer />
     </>
   );
