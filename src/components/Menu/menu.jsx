@@ -50,13 +50,51 @@ const Menu = () => {
 
       <div className="grid-container-2">
         <div className="grid1">
-          <img className="component2" src={Component2} alt="image2" />
-          <img className="component4" src={Component4} alt="image4" />
+          <div className="card-overlay">
+            <img className="component2" src={Component2} alt="image2" />
+            <div className="overlay-text">
+              <h3>Freshly Baked</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
+                vel felis vel nisi.
+              </p>
+            </div>
+          </div>
+
+          <div className="card-overlay">
+            <img className="component4" src={Component4} alt="image4" />
+            <div className="overlay-text">
+              <h3>Crafted Coffee</h3>
+              <p>
+                Integer tristique, metus vitae lacinia feugiat, justo purus
+                interdum lacus.
+              </p>
+            </div>
+          </div>
         </div>
 
         <div className="grid2">
-          <img className="component3" src={Component3} alt="image3" />
-          <img className="component1" src={Component1} alt="image1" />
+          <div className="card-overlay">
+            <img className="component3" src={Component3} alt="image3" />
+            <div className="overlay-text">
+              <h3>Golden Mornings</h3>
+              <p>
+                Aliquam erat volutpat. Nullam vel turpis vel nunc tristique
+                aliquam at vel libero.
+              </p>
+            </div>
+          </div>
+
+          <div className="card-overlay">
+            <img className="component1" src={Component1} alt="image1" />
+            <div className="overlay-text">
+              <h3>Daily Rituals</h3>
+              <p>
+                Morbi porta tortor nec eros tincidunt, eget dictum metus
+                vulputate.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>

@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 0;
+  padding: 20px 10px;
   width:100%;
   max-width: 1440px;
   margin: 0 ;
@@ -13,7 +13,7 @@
   flex-wrap: wrap;
   overflow: hidden;
   align-items: stretch;
-  min-height: 90vh; 
+  /* min-height: 90vh;  */
 }
 
 *, *::before, *::after {
@@ -121,7 +121,7 @@
 
 .contactForm textarea {
   resize: vertical;
-  min-height: 120px;
+  min-height: 100px;
 }
 
 .contactForm button {
@@ -135,11 +135,11 @@
   font-weight: bold;
   font-family: 'Inter', sans-serif;
   text-align: center;
-  margin-top: 1.5rem;
+  /* margin-top: 1.5rem; */
   width: 100%;
 }
 
-.footer {
+.larg-screen-footer, .small-screen-footer {
   width: 50%;
   text-align: left;
   flex-shrink: 0;
@@ -154,7 +154,7 @@
 
 .copyDesc ,.logoDesc{
   color: #F1EDEB;
-  font-size: 20px;
+  font-size: 16px;
   font-style: italic;
   margin-top: 0.5rem;
   font-family: 'Inter', sans-serif;
@@ -165,13 +165,16 @@
 @media (min-width: 768px) {
   .mug-image {
     width: 100%; 
-    max-width: 500px;
+    max-width: 300px;
     height: auto;
     margin-top: 1rem;
     margin-bottom: 0.5rem; 
   }
   .contactForm,.left-side{
     max-width: 50%;
+  }
+  .small-screen-footer {
+    display: none;
   }
 }
 
@@ -196,9 +199,14 @@
     width: 100%;
     margin-top: 1rem;
     margin-right: 0;
+    padding: 1rem;
   }
 
-  .footer {
+  .larg-screen-footer {
+    display: none;
+  }
+
+  .small-screen-footer {
     order: 3;
     margin-top: 0.1rem;
     width:50%;
@@ -237,7 +245,7 @@
   .copyDesc{
     margin-top: 0.5rem;;
   }
-  .footer, .logoDesc, .copyDesc {
+  .larg-screen-footer, .small-screen-footer, .logoDesc, .copyDesc {
     width: 100%;
     max-width: 100%;
     white-space: normal;
@@ -250,7 +258,7 @@
 
 
 @media (min-width: 1024px) {
-  .footer {
+  .larg-screen-footer {
     margin-top: 0.1rem ;
     padding-left: 3rem;
     width: 100%;
@@ -275,7 +283,7 @@
   .contactForm{
     margin-right: 60px;
   }
-  .contactForm button {
+  /* .contactForm button {
     margin-top: 1.5rem; 
-  }
+  } */
 }

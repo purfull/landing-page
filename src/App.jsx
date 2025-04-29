@@ -1,16 +1,24 @@
 import { useState } from "react";
-// import "./App.css";
-// import Hero from "./components/hero/Hero";
-import Footer from "./components/Footer/footer";
-import Menu from "./components/Menu/menu";
+// import './App.css'
+import NavBarComp from "./components/Navbar.jsx";
+import Menu from "./components/Menu/menu.jsx";
+import Footer from "./components/Footer/footer.jsx";
+import Testimonial from "./components/Testimonial/test.jsx";
+import Calledtoaction from "./components/cta/calledtoactiongrid.jsx";
+import LocationAndOrder from "./components/locationandorder/locationandorder.jsx";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <>
-      {/* <Hero /> */}
-      <Menu />
+      <NavBarComp />
+      <div className="menu-container">
+        <Menu />
+      </div>
+      <Testimonial />
+      <Calledtoaction />
+      <LocationAndOrder />
       <Footer />
     </>
   );
