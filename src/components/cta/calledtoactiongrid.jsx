@@ -7,7 +7,7 @@ const Calledtoaction = () => {
             <div className="cta-wrapper">
                 {/* Left side text section */}
                 <div className="cta-text-area">
-                    <div className="cta-text-content">
+                    <div className="cta-text-content"> 
                         <button className="cta-category-btn">Ambience & Lifestyle</button>
                         <h1 className="cta-heading">More than a café. It's a mood.</h1>
                         <p className="cta-description">Step inside and discover a space curated for slow sips, inspired thinking, and meaningful connection. Every corner of Downstairs is designed to reflect comfort, creativity, and the quiet luxury of everyday rituals.</p>
@@ -19,9 +19,11 @@ const Calledtoaction = () => {
                 {/* Right side image grid */}
                 <div className="cta-parent-grid">
 
-                <div className="cta-image-grid-1">
-                        <div class="item item1"> <img src={appImages?.Grid_IMG_1} alt="img-1" className="one" /></div>
-                        <div class="item item2"><img src={appImages?.Grid_IMG_2} alt="img-2" className="two" /> </div>
+ 
+                    <div className="cta-image-grid-1">
+                        <div class="item item1"> <img src="/Rectanglefive.svg" alt="" className="one" /></div>
+                        <div class="item item2"><img src="/Rectanglefour.svg" alt="" className="two" /> </div>
+
 
                     </div>
                     <div className="cta-image-grid-2">

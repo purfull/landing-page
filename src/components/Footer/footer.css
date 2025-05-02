@@ -5,6 +5,7 @@
   justify-content: space-between;
   padding: 20px 10px;
   width:100%;
+  /* max-width: 1440px; */
   margin: 0 ;
   gap: 2rem;
   box-sizing: border-box;
@@ -44,7 +45,7 @@
 .logoDesc {
   color: whitesmoke;
   font-family: 'Inter', sans-serif;
-  font-size: 18px;
+  font-size: 20px;
   margin-bottom: 1rem;
 }
 .line-break {
@@ -178,7 +179,7 @@
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 468px) {
   .contact-section {
     flex-direction: column;
     padding: 1rem;

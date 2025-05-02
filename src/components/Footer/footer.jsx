@@ -25,7 +25,7 @@ const Footer = () => {
     setFormData({ name: "", email: "", message: "" });
   };
 
-  return (
+  return ( 
     <div className="contact-section">
       <div className="left-side">
         <div className="contactImage-container">
@@ -43,7 +43,7 @@ const Footer = () => {
         </div>
       <div className="larg-screen-footer">
         <hr className="custom-divider" />
-        <p className="copyDesc">&copy; 2025 Downstairs. Halaal Certified.</p>
+        <p className="copyDesc">&copy; 2025 Downstairs. Halal Certified.</p>
       </div>
       </div>
 
@@ -91,7 +91,7 @@ const Footer = () => {
 
       <div className="small-screen-footer">
         <hr className="custom-divider" />
-        <p className="copyDesc">&copy; 2025 Downstairs. Halaal Certified.</p>
+        <p className="copyDesc">&copy; 2025 Downstairs. Halal Certified.</p>
       </div>
     </div>
   );

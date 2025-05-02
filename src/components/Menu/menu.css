@@ -180,7 +180,7 @@
   background-color: #FFFBF0;
   justify-content: space-between;
   align-items: stretch;
-  height: 120vh;
+  /* height: 100vh; */
   gap: 40px;
   margin: 0;
   padding: 0;
@@ -190,6 +190,8 @@
 }
 
 .portion1 {
+  
+  padding-left: 5%;
   flex: 0 0 40%;
   display: flex;
   flex-direction: column;
@@ -198,8 +200,8 @@
 }
 
 .main-title-box {
-  background-color: rgba(164, 113, 73, 0.3);
-  border: 2px solid #a47149;
+  background-color: rgba(164, 113, 73, 0.1);
+  border: 1px solid #a47149;
   width: 200px;
   height: 50px;
   padding: 10px;
@@ -207,6 +209,7 @@
   justify-content: center;
   font-family: 'Inter', sans-serif;
   font-weight: 500;
+  font-size: 16px;
   font-style: italic;
   color: #a47149;
   border-radius: 40px;
@@ -223,9 +226,10 @@
   height: 50px;
   padding: 10px;
   text-align: center;
-  justify-content: flex-start;
+  justify-content: center;
   font-family: 'Inter', sans-serif;
   font-weight: 500;
+  font-size: 20px;
   font-style: italic;
   border-radius: 10px;
   cursor: pointer;
@@ -241,7 +245,7 @@
 
 .menuDesc {
   color: #6F4E37;
-  font-size: 40px;
+  font-size: 48px;
   line-height: 135%;
   font-family: 'Cormorant Garamond', serif;
   display: flex;
@@ -287,7 +291,7 @@
   flex: 0 0 50%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  /* grid-template-rows: 1fr 1fr; */
   gap: 20px;
   padding: 20px;
   max-width: 100%;
@@ -302,10 +306,11 @@
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .menu-highlights {
     flex-direction: column;
     overflow-y: hidden;
+    height: auto !important;
   }
 
   .grid-container-2 {
@@ -314,7 +319,7 @@
   }
 
   .portion1 {
-    margin-left: 2rem;
+    /* margin-left: 2rem; */
     padding-right: 20px;
   }
 
@@ -326,6 +331,9 @@
     justify-content: center;
     padding: 1rem;
   }
+  .title-box {
+    padding: 3rem 1rem;
+  }
 }
 
 @media (min-width: 769px) {
@@ -333,10 +341,10 @@
     padding: 40px;
   } */
 
-  .portion1 {
-    padding-left: 50px;
+  /* .portion1 {
+    padding-left: 5%;
     margin-bottom: 120px;
-  }
+  } */
 
   .grid-container-2 {
     padding-right: 40px;
@@ -349,7 +357,7 @@
   .title-box {
     flex-direction: row;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     height: 100px;
     padding: 35px 16px;
     text-align: center;

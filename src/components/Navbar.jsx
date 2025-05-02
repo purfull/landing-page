@@ -1,9 +1,9 @@
 import './Navbar.css';
 import { useState } from 'react';
 import { MenuOutlined } from '@ant-design/icons';
+import HalalLogo from "/halal-logo.png"
 
-
-const NavBarComp = () => {
+const NavBarComp = ({ onHomeClick, onAboutClick, onTestimonialsClick, onMenuClick }) => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     return (
         <div>
@@ -14,11 +14,11 @@ const NavBarComp = () => {
 
                 {/* Desktop Links */}
                 <div className="navbar-links">
-                    <div className="navbar-links-item">Home</div>
-                    <div className="navbar-links-item">About</div>
-                    <div className="navbar-links-item">Testimonials</div>
-                    <button className="navbar-links-button">View Menu</button>
-                </div>
+        <div className="navbar-links-item" style={{ color: '#442a27' }}>Home</div>
+        <div className="navbar-links-item" onClick={onAboutClick}>About</div>
+        <div className="navbar-links-item" onClick={onTestimonialsClick}>Testimonials</div>
+        <button className="navbar-links-button" onClick={onMenuClick}>View Menu</button>
+      </div>
 
                 {/* Mobile Hamburger Icon */}
                 <div className="navbar-hamburger" onClick={() => setIsMenuOpen(!isMenuOpen)}>
@@ -28,11 +28,11 @@ const NavBarComp = () => {
                 {/* Mobile Dropdown */}
                 {isMenuOpen && (
                     <div className="navbar-mobile-menu">
-                        <div className="navbar-mobile-item">Home</div>
-                        <div className="navbar-mobile-item">About</div>
-                        <div className="navbar-mobile-item">Testimonials</div>
-                        <button className="navbar-mobile-button">View Menu</button>
-                    </div>
+          <div className="navbar-mobile-item" >Home</div>
+          <div className="navbar-mobile-item" onClick={() => { onAboutClick(); setIsMenuOpen(false); }}>About</div>
+          <div className="navbar-mobile-item" onClick={() => { onTestimonialsClick(); setIsMenuOpen(false); }}>Testimonials</div>
+          <button className="navbar-mobile-button" onClick={() => { onMenuClick(); setIsMenuOpen(false); }}>View Menu</button>
+        </div>
                 )}
             </div>
 
@@ -44,7 +44,7 @@ const NavBarComp = () => {
                     <div style={{ display: "flex" }}>
                         <div>
                             <div className='honest-brews'>Honest Brews.</div>
-                            <img className='coffee-cup' src={'/UnderLine.png'} alt="Coffee Cup" style={{ width: '100%', maxWidth: '173px' }} />
+                            <img className='coffee-cup hero-text-underline' src={'/UnderLine.png'} alt="Coffee Cup" />
                         </div>
                         <span className='premium-bakes' style={{ fontSize: '30px', marginLeft: '5px', marginBottom: "0" }}>Daily</span>
 
@@ -55,16 +55,17 @@ const NavBarComp = () => {
 
                 </div>
 
-                <div>
+                <div style={{textAlign: 'center'}}>
                     <img className='coffee-cup' src={'/CofeeGrp.png'} alt="Coffee Cup" />
                 </div>
 
             </div>
 
             <div style={{ position: 'relative' }}>
+            <img className='halal-logo' src={HalalLogo} alt="" />
                 <div class="about-section">
                     <h2>About Downstairs</h2>
-                    <p>Downstairs is your daily escape. A curated cafe experience where premium bakes meet honest brews.</p>
+                    <p className='about-para'>Downstairs is your daily escape. A curated cafe experience where premium bakes meet honest brews.</p>
 
                     <div class="cards">
                         <div class="card-container">

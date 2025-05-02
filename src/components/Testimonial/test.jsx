@@ -18,7 +18,7 @@ const testimonials = [
   },
   {
     feedback:
-      "I've been ordering from this service for over 6 months now, and the quality of produce has been consistently excellent. The mangoes and rambutan are always perfectly ripe...",
+      "I've been ordering from this service for over 6 months now, and the quality of produce has been consistently excellent...",
     name: "Shizukz Admin",
     image: Group4,
   },
@@ -38,7 +38,7 @@ const testimonials = [
 
 export default function Testimonial() {
   return (
-    <div className="testimonial-wrapper">
+    <div className="testimonial-wrapper"> 
         <div className="carousel">
           <Carousel className="carousel-inner" dotPosition="bottom" dots={false} arrows={true}>
             {testimonials.map((t, index) => (
