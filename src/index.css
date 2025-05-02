@@ -1,13 +1,22 @@
 * {
     margin: 0;
     padding: 0;
+    
 }
 
 .menu-container {
-    padding-top: 10%;
+    padding-top: 168px;
     background-color: #FFFBF0;
 }
 
+@media (max-width: 1024px) {
+    .menu-container {
+        padding-top: 0;
+        background-color: #FFFBF0;
+    }
+    
+
+}
 /* FFFBF0 */
 
 /* FFFBF0 */

@@ -17,7 +17,7 @@ const Calledtoaction = () => {
 
                 {/* Right side image grid */}
                 <div className="cta-parent-grid">
-
+ 
                     <div className="cta-image-grid-1">
                         <div class="item item1"> <img src="/Rectanglefive.svg" alt="" className="one" /></div>
                         <div class="item item2"><img src="/Rectanglefour.svg" alt="" className="two" /> </div>

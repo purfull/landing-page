@@ -2,6 +2,7 @@
   background-color: #fffaf3;
   padding: 3rem 2rem;
   font-family: 'Georgia', serif;
+  padding-top: 128px;
 }
 
 .testimonial-card {
@@ -151,5 +152,40 @@
   
 }
 
+@media (max-width: 1024px) {
+  .testimonial-card {
+    height: 40vh;
+  }
+  .testimonial-wrapper{
+    
+  padding-top: 0;
+  }
+  .testimonial-wrapper .slick-next {
+    right: 5%;
+  }
+  .testimonial-wrapper .slick-prev {
+    right: 15%; 
+  }
+  .arrow-image {
+    display: none !important;
+  }
+}
 
+@media (max-width: 480px) { 
+  .testimonial-card {
+    flex-direction: column;
+    height: auto;
+    margin-top: 10vh;
+  }
+  
+.testimonial-wrapper .slick-next {
+  right: 5%;
+}
+.testimonial-wrapper .slick-prev {
+  right: 26%; 
+}
+.smile-image {
+  display: none !important;
+}
+}
 

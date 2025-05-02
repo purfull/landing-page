@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 /* .navbar-component {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -32,8 +34,8 @@
 
 .navbar-component {
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    padding: 10px 30px;
+    grid-template-columns: 2fr 1.4fr;
+    padding: 10px 5%;
     align-items: center;
     background-color: #FFFBF0;
     position: relative;
@@ -47,20 +49,24 @@
 
 .navbar-links {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
 .navbar-links-item {
+    cursor: pointer;
     font-size: 20px;
 }
 
 .navbar-links-button {
+    font-family: "Inter", sans-serif;
+    font-weight: medium;
     font-size: 16px;
     background: black;
     color: white;
-    padding: 10px 16px;
+    padding: 16px;
     border-radius: 25px;
+    cursor: pointer;
     /* width: 8rem; */
 }
 
@@ -106,7 +112,7 @@
 }
 
 /* Responsive rules */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .navbar-links {
         display: none;
         /* Hide normal menu on mobile */
@@ -150,6 +156,7 @@
 }
 
 .downstairs-cake-container {
+    padding-left: 5%;
     margin-top: 10px;
 }
 
@@ -188,7 +195,7 @@
     background-color: #144734;
     color: white;
     text-align: center;
-    padding: 4rem 1rem 30vh;
+    padding: 4rem 1rem 40vh;
 }
 
 .about-section h2 {
@@ -197,10 +204,10 @@
     margin-bottom: 0.5rem;
 }
 
-.about-section p {
+.about-para {
     font-size: 24px;
-    max-width: 800px;
-    margin: 0 auto 2rem;
+    max-width: 600px;
+    margin: 0 auto 128px;
 }
 
 .cards {
@@ -242,6 +249,7 @@
     /* above the ::before rotated background */
     transition: transform 0.3s ease;
     box-shadow: none;
+    /* max-height: 35vh; */
     /* clean, no dark shadows */
 }
 
@@ -265,19 +273,25 @@
 
 
     position: absolute;
-    top: 78%;
-    left: 2.5%;
-    width: 95%;
+    top: 82%;
+    left: 7.5%;
+    width: 85%;
 
+}
+.halal-logo {
+    max-width: 140px;
+    position: absolute;
+    right: 5%;
+    top: -6%;
 }
 
 .quote-text {
-    font-size: 40px;
+    font-size: 32px;
     font-style: italic;
     /* max-width: 800px; */
     margin-bottom: 1rem;
 
-    background: #fffbf0;
+    background: #FFFBF0;
     padding: 2rem 2rem;
     border-radius: 10px 0 0 0;
     /* border-radius-left-top: 10px; */
@@ -295,15 +309,26 @@
     border-radius: 1rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .cards {
         flex-direction: column;
         align-items: center;
+        /* max-height: 20vh; */
+    }
+    .quote-text {
+        background-color: #fff;
     }
 
+    .halal-logo {
+        top: -4%;
+    }
+    /* .card {
+        max-height: 22vh;
+    } */
     .quote-section {
-        flex-direction: column;
+        flex-direction: row;
         text-align: center;
+        margin: auto;
     }
 
     .coffee-group-container {
@@ -312,6 +337,9 @@
 
     .coffee-cup {
         width: 300px;
+    }
+    .hero-text-underline {
+        max-width: 173px !important;
     }
 }
 
@@ -326,12 +354,13 @@
 
     .downstairs-cake-container {
         margin-top: 0;
+        padding-left: auto;
     }
 
     .honest-brews,
     .premium-bakes,
     .rituals-container {
-        font-size: 36px !important;
+        font-size: 40px !important;
     }
 
     .coffee-cup {
@@ -350,6 +379,15 @@
         font-size: 14px;
         padding: 8px 12px;
     }
+    
+.about-section {
+    padding: 4rem 1rem;
+}
+.cards {
+
+    gap: 50px;
+}
+
 }
 
 @media (max-width: 480px) {
@@ -357,7 +395,7 @@
     .honest-brews,
     .premium-bakes,
     .rituals-container {
-        font-size: 28px !important;
+        font-size: 40px !important;
     }
 
     .coffee-cup {
@@ -371,7 +409,8 @@
 
     .navbar-links-button {
         font-size: 16px;
-        padding: 10px;
+        padding: 16px;
+        border-radius: 32px;
     }
 }
 
@@ -382,7 +421,7 @@
     }
 
     .quote-section {
-        flex-direction: column;
+        /* flex-direction: column; */
         align-items: center;
         justify-content: center;
         position: static;
@@ -426,5 +465,13 @@
         width: 100%;
         height: auto;
         object-fit: cover;
+    }
+}
+
+@media (max-width: 1024px) {
+    .quote-section {
+        
+    position: static;
+        flex-direction: row;
     }
 }
