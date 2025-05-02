@@ -1,3 +1,4 @@
+import appImages from "../../Globals/AppImages";
 import "./locationandorder.css";
 
 const LocationAndOrder = () => {
@@ -20,14 +21,15 @@ const LocationAndOrder = () => {
  
                     <div className="visit-button-wrapper">
                         <button className="visit-button">Visit Us</button>
-                        <img src="/cloud.svg" alt="cloud-img" className="icon-cloud" />
+                        <img src={appImages?.CLOUD_IMG} alt="cloud-img" className="icon-cloud" />
+
                     </div>
 
 
 
                     <div className="location-info">
                         <button className="location-header">
-                            <img src="/location.svg" alt="location" className="icon" />
+                            <img src={appImages?. LOCATION_IMG} alt="location" className="icon" />
                             Location
                         </button>
 
@@ -53,7 +55,7 @@ const LocationAndOrder = () => {
 
                     <div className="operating-hours">
                         <div className="hours-header">
-                            <img src="/clock.svg" alt="clock" className="icon" />
+                            <img src={appImages?.CLOCK_LOGO} alt="clock" className="icon" />
                             <span>Hours of Operation</span>
                         </div>
 
@@ -81,7 +83,7 @@ const LocationAndOrder = () => {
                     Tap below to place your order via WhatsApp - we’ll have it ready when you arrive
                 </p>
                 <button className="whatsapp-button">
-                    <img src="/whatsapp.svg" alt="WhatsApp logo" className="icon" />
+                    <img src={appImages?.WHATSAPP_ICON} alt="WhatsApp logo" className="icon" />
                     Order Now on WhatsApp
                 </button>
             </div>

@@ -42,6 +42,7 @@ export default function Testimonial() {
         <div className="carousel">
           <Carousel className="carousel-inner" dotPosition="bottom" dots={false} arrows={true}>
             {testimonials.map((t, index) => (
+              
               <div key={index} style={{overflow: "visible"}}>
                 <div className="testimonial-card">
                 <img className="ray-image" src={Rays} alt={t.name} />
