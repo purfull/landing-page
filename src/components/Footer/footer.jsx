@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import "./footer.css";
 import Logo from "../../assets/logo.png";
-import MediaIcon from "../../assets/medias.png";
+import instagramIcon from "/instagram.svg";
+import facebookIcon from "/facebook.svg";
 import Mug from "../../assets/mug.png";
 
 const Footer = () => {
@@ -21,9 +22,22 @@ const Footer = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert("Your message has been sent!");
+  
+    const { name, email, message } = formData;
+  
+    const whatsappMessage = `Hello, my name is ${name}. My email is ${email}. Here is my message:\n\n${message}`;
+  
+    const encodedMessage = encodeURIComponent(whatsappMessage);
+  
+    const phoneNumber = '919360389903'; 
+  
+    const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+  
+    window.open(whatsappURL, '_blank');
+  
     setFormData({ name: "", email: "", message: "" });
   };
+  
 
   return ( 
     <div className="contact-section">
@@ -38,7 +52,11 @@ const Footer = () => {
             </span>
           </p>
 
-          <img src={MediaIcon} alt="icons" className="media-icons" />
+<div className="" style={{display: "flex"}}>
+
+          <a href="https://www.instagram.com/downstairs_bw?igsh=MWpib3BkNm9vd2dqeg==" target="_blank"><img src={instagramIcon} alt="icons" className="media-icons" /></a>
+          <a href="https://www.facebook.com/share/12KER66Uw5R/?mibextid=wwXIfr" target="_blank"><img src={facebookIcon} alt="icons" className="media-icons" /></a>
+</div>
           <img src={Mug} alt="coffeemug" className="mug-image" />
         </div>
       <div className="larg-screen-footer">

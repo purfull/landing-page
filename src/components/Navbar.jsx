@@ -17,7 +17,7 @@ const NavBarComp = ({ onHomeClick, onAboutClick, onTestimonialsClick, onMenuClic
         <div className="navbar-links-item" style={{ color: '#442a27' }}>Home</div>
         <div className="navbar-links-item" onClick={onAboutClick}>About</div>
         <div className="navbar-links-item" onClick={onTestimonialsClick}>Testimonials</div>
-        <button className="navbar-links-button" onClick={onMenuClick}>View Menu</button>
+        <button className="navbar-links-button" >View Menu</button>
       </div>
 
                 {/* Mobile Hamburger Icon */}
@@ -31,7 +31,7 @@ const NavBarComp = ({ onHomeClick, onAboutClick, onTestimonialsClick, onMenuClic
           <div className="navbar-mobile-item" >Home</div>
           <div className="navbar-mobile-item" onClick={() => { onAboutClick(); setIsMenuOpen(false); }}>About</div>
           <div className="navbar-mobile-item" onClick={() => { onTestimonialsClick(); setIsMenuOpen(false); }}>Testimonials</div>
-          <button className="navbar-mobile-button" onClick={() => { onMenuClick(); setIsMenuOpen(false); }}>View Menu</button>
+          <button className="navbar-mobile-button" >View Menu</button>
         </div>
                 )}
             </div>

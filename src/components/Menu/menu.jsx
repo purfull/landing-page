@@ -5,10 +5,10 @@ import Component1 from "../../assets/Component-1.png";
 import Component2 from "../../assets/Component-2.png";
 import Component3 from "../../assets/Component-3.png";
 import Component4 from "../../assets/Component-4.png";
-import Cake from "../../assets/cupcake.png";
-import Crossiant from "../../assets/crossiant.png";
-import Salad from "../../assets/salad.png";
-import Coffee from "../../assets/coffee.png";
+import Cake from "../../assets/cake.svg";
+import Crossiant from "../../assets/bakes.svg";
+import Salad from "../../assets/bites.svg";
+import Coffee from "../../assets/coffee.svg";
 
 const Menu = () => {
   return (
@@ -21,23 +21,23 @@ const Menu = () => {
 
         <div className="grid-container-1">
           <button className="title-box box1">
-            <img src={Coffee} alt="coffee" className="icon" />
-            Coffee & <br />
+            <p><img src={Coffee} alt="coffee" className="icon" />
+            Coffee & </p>
             Beverages
           </button>
           <button className="title-box box2">
-            <img src={Cake} alt="cakes" className="icon" />
-            Cakes & <br />
+            <p><img src={Cake} alt="cakes" className="icon" />
+            Cakes & </p>
             Desserts
           </button>
           <button className="title-box box3">
-            <img src={Crossiant} alt="pastries" className="icon" />
-            Bakes & <br />
+            <p style={{textAlign: ''}}><img src={Crossiant} alt="pastries" className="icon" />
+            Bakes & </p>
             Pastries
           </button>
           <button className="title-box box4">
-            <img src={Salad} alt="light-bites" className="icon" />
-            Light <br />
+            <p><img src={Salad} alt="light-bites" className="icon" />
+            Light </p>
             Bites
           </button>
         </div>
@@ -54,7 +54,8 @@ const Menu = () => {
             <img className="component2" src={Component2} alt="image2" />
             <div className="overlay-text">
               <h3>Freshly Baked</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel felis vel nisi.</p>
+              <p>Start your day with the irresistible aroma of oven-fresh delights.
+Every bite is warm, comforting, and straight from the hearth.</p>
             </div>
           </div>
 
@@ -62,7 +63,7 @@ const Menu = () => {
             <img className="component4" src={Component4} alt="image4" />
             <div className="overlay-text">
               <h3>Crafted Coffee</h3>
-              <p>Integer tristique, metus vitae lacinia feugiat, justo purus interdum lacus.</p>
+              <p>Brewed with precision, served with passion. Every cup tells a story—rich, smooth, and perfectly balanced.</p>
             </div>
           </div>
         </div>
@@ -72,15 +73,17 @@ const Menu = () => {
             <img className="component3" src={Component3} alt="image3" />
             <div className="overlay-text">
               <h3>Golden Mornings</h3>
-              <p>Aliquam erat volutpat. Nullam vel turpis vel nunc tristique aliquam at vel libero.</p>
+              <p>Pastries & Baked Items
+Rise to golden, flaky pastries that melt in your mouth. Crafted to brighten mornings with indulgent, buttery bliss.</p>
             </div>
           </div>
 
           <div className="card-overlay">
             <img className="component1" src={Component1} alt="image1" />
             <div className="overlay-text">
-              <h3>Daily Rituals</h3>
-              <p>Morbi porta tortor nec eros tincidunt, eget dictum metus vulputate.</p>
+              <h3>Light Bites</h3>
+              <p>Wholesome snacks for anytime cravings.
+Tasty, fulfilling, and never too heavy.</p>
             </div>
           </div>
         </div>

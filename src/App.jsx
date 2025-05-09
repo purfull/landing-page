@@ -23,10 +23,10 @@ function App() {
   onHomeClick={() => scrollToRef(homeRef)}
   onAboutClick={() => {
     if (aboutRef.current) {
-      const offset = window.innerHeight; // scroll 100vh above the element
-      const top = aboutRef.current.offsetTop;
+      const offset = window.innerHeight * 0.90; 
+      // const top = aboutRef.current.offsetTop;
       window.scrollTo({
-        top: top - offset,
+        top:  offset,
         behavior: 'smooth',
       });
     }
