@@ -41,10 +41,10 @@ const Footer = () => {
           <img src={MediaIcon} alt="icons" className="media-icons" />
           <img src={Mug} alt="coffeemug" className="mug-image" />
         </div>
-      <div className="larg-screen-footer">
-        <hr className="custom-divider" />
-        <p className="copyDesc">&copy; 2025 Downstairs. Halaal Certified.</p>
-      </div>
+        <div className="larg-screen-footer">
+          <hr className="custom-divider" />
+          <p className="copyDesc">&copy; 2025 Downstairs. Halaal Certified.</p>
+        </div>
       </div>
 
       <form className="contactForm" onSubmit={handleSubmit}>
