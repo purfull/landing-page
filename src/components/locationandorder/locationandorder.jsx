@@ -45,9 +45,9 @@ const LocationAndOrder = () => {
 
 
                         <span className="address-text">
-                            123 Riverwalk Avenue<br />
-                            San Antonio, TX 78205<br />
-                            United States
+                            Downstairs BW,<br />
+                            Riverwalk Mall, Gaborone,<br />
+                            Botswana
                         </span>
                     </div>
 
@@ -59,16 +59,16 @@ const LocationAndOrder = () => {
 
                         <div className="hours-row">
                             <span>Monday - Friday</span>
-                            <span>7:00 AM - 8:00 PM</span>
+                            <span>7:30 AM - 10:00 PM</span>
                         </div>
                         <div className="hours-row">
-                            <span>Saturday</span>
-                            <span>8:00 AM - 9:00 PM</span>
+                            <span>Saturday - Sunday</span>
+                            <span>7:30 AM - 10:00 PM</span>
                         </div>
-                        <div className="hours-row">
+                        {/* <div className="hours-row">
                             <span>Sunday</span>
-                            <span>8:00 AM - 6:00 PM</span>
-                        </div>
+                            <span>7:30 AM - 10:00 PM</span>
+                        </div> */}
                     </div>
 
                 </div>
@@ -82,12 +82,12 @@ const LocationAndOrder = () => {
                 </p>
                 <button
   className="whatsapp-button"
-  onClick={() => {
-    const phoneNumber = '919360389903'; // Replace with your number in international format, e.g., '26771234567'
-    const message = encodeURIComponent('Hi, I would like to place an order!');
-    const url = `https://wa.me/${phoneNumber}?text=${message}`;
-    window.open(url, '_blank');
-  }}
+//   onClick={() => {
+//     const phoneNumber = '919360389903';
+//     const message = encodeURIComponent('Hi, I would like to place an order!');
+//     const url = `https://wa.me/${phoneNumber}?text=${message}`;
+//     window.open(url, '_blank');
+//   }}
   style={{cursor: "pointer"}}
 >
   <img src="/whatsapp.svg" alt="WhatsApp logo" className="icon" />

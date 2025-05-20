@@ -42,7 +42,13 @@ const Menu = () => {
           </button>
         </div>
 
-        <button className="menu-button">
+        <button 
+          onClick={() => {
+    const link = document.createElement('a');
+    link.href = '/Downstairs Menu (Strictly not for print).pdf'; 
+    link.download = 'Downstairs Menu (Strictly not for print).pdf';
+    link.click();
+  }} className="menu-button">
           View Full Menu
           <img src={Frame} alt="frame" className="arrow-frame" />
         </button>

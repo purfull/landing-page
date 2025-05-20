@@ -17,7 +17,13 @@ const NavBarComp = ({ onHomeClick, onAboutClick, onTestimonialsClick, onMenuClic
         <div className="navbar-links-item" style={{ color: '#442a27' }}>Home</div>
         <div className="navbar-links-item" onClick={onAboutClick}>About</div>
         <div className="navbar-links-item" onClick={onTestimonialsClick}>Testimonials</div>
-        <button className="navbar-links-button" >View Menu</button>
+        <button 
+          onClick={() => {
+    const link = document.createElement('a');
+    link.href = '/Downstairs Menu (Strictly not for print).pdf'; 
+    link.download = 'Downstairs Menu (Strictly not for print).pdf';
+    link.click();
+  }} className="navbar-links-button" >View Menu</button>
       </div>
 
                 {/* Mobile Hamburger Icon */}
@@ -31,7 +37,14 @@ const NavBarComp = ({ onHomeClick, onAboutClick, onTestimonialsClick, onMenuClic
           <div className="navbar-mobile-item" >Home</div>
           <div className="navbar-mobile-item" onClick={() => { onAboutClick(); setIsMenuOpen(false); }}>About</div>
           <div className="navbar-mobile-item" onClick={() => { onTestimonialsClick(); setIsMenuOpen(false); }}>Testimonials</div>
-          <button className="navbar-mobile-button" >View Menu</button>
+          <button 
+          onClick={() => {
+    const link = document.createElement('a');
+    link.href = '/Downstairs Menu (Strictly not for print).pdf'; 
+    link.download = 'Downstairs Menu (Strictly not for print).pdf';
+    link.click();
+  }}
+   className="navbar-mobile-button" >View Menu</button>
         </div>
                 )}
             </div>
@@ -50,7 +63,12 @@ const NavBarComp = ({ onHomeClick, onAboutClick, onTestimonialsClick, onMenuClic
 
                     </div>
                     <div className='rituals-container'>Rituals.</div>
-                    <button className='navbar-links-button'>View Our Menu</button>
+                    <button onClick={() => {
+    const link = document.createElement('a');
+    link.href = '/Downstairs Menu (Strictly not for print).pdf'; 
+    link.download = 'Downstairs Menu (Strictly not for print).pdf';
+    link.click();
+  }} className='navbar-links-button'>View Our Menu</button>
 
 
                 </div>

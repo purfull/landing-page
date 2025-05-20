@@ -12,29 +12,42 @@ import Misc from "../../assets/Misc_04.png";
 const testimonials = [
   {
     feedback:
-      "The pastries here are unmatched! Each bite is a little moment of joy. Paired with their speciality coffee, it's pure bliss.",
+      "Downstairs is my little escape in the middle of a busy day. The coffee's always great, and the staff are super warm—it just feels good to be there.",
     name: "Laziya Vison",
     image: Group4,
   },
   {
     feedback:
-      "I've been ordering from this service for over 6 months now, and the quality of produce has been consistently excellent...",
-    name: "Shizukz Admin",
+      "I didn’t expect to fall in love with a café, but here we are. Downstairs has such a calm vibe, and their food hits the spot every time.",
+    name: "Naledi Mokoena",
     image: Group4,
   },
   {
     feedback:
-      "Moving to Sri Lanka, I was worried about finding good quality produce. This website has been my savior...",
-    name: "John Doe",
+      "This place is like a hug in café form. Chill music, cozy corners, and the kind of coffee that makes you slow down and enjoy it.",
+    name: "Sipho Dlamini",
     image: Group4,
   },
   {
     feedback:
-      "As a busy restaurant owner, I need reliable suppliers who deliver premium quality. This service has exceeded my expectations!",
-    name: "john Doe",
+      "Whenever I need to think, unwind, or just treat myself, I head to Downstairs. It’s got that comforting energy I didn’t know I needed.",
+    name: "Thandiwe Mokoena",
+    image: Group4,
+  },
+  {
+    feedback:
+      "Honestly, I just came in for a quick coffee—and now it’s my favorite spot in the city. Everything here feels intentional, in the best way.",
+    name: "Karabo Nkosi",
+    image: Group4,
+  },
+  {
+    feedback:
+      "Downstairs isn’t just a café, it’s a vibe. Good people, even better coffee, and always the perfect place to take a break.",
+    name: "Lerato Mahlangu",
     image: Group4,
   },
 ];
+
 
 export default function Testimonial() {
   return (
