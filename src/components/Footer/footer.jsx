@@ -23,17 +23,17 @@ const Footer = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
   
-    // const { name, email, message } = formData;
+    const { name, email, message } = formData;
   
-    // const whatsappMessage = `Hello, my name is ${name}. My email is ${email}. Here is my message:\n\n${message}`;
+    const whatsappMessage = `Hello, my name is ${name}. My email is ${email}. Here is my message:\n\n${message}`;
   
-    // const encodedMessage = encodeURIComponent(whatsappMessage);
+    const encodedMessage = encodeURIComponent(whatsappMessage);
   
-    // const phoneNumber = '919360389903'; 
+    const phoneNumber = '26776021053'; 
   
-    // const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+    const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
   
-    // window.open(whatsappURL, '_blank');
+    window.open(whatsappURL, '_blank');
   
     setFormData({ name: "", email: "", message: "" });
   };

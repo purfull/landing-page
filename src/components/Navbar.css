@@ -476,3 +476,13 @@
         flex-direction: row;
     }
 }
+
+
+@media (max-width: 361px) { 
+
+    .honest-brews,
+    .premium-bakes,
+    .rituals-container {
+        font-size: 36px !important;
+    }
+}

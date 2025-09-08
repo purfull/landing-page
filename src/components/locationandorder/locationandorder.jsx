@@ -82,12 +82,12 @@ const LocationAndOrder = () => {
                 </p>
                 <button
   className="whatsapp-button"
-//   onClick={() => {
-//     const phoneNumber = '919360389903';
-//     const message = encodeURIComponent('Hi, I would like to place an order!');
-//     const url = `https://wa.me/${phoneNumber}?text=${message}`;
-//     window.open(url, '_blank');
-//   }}
+  onClick={() => {
+    const phoneNumber = '26776021053';
+    const message = encodeURIComponent('Hi, I would like to place an order!');
+    const url = `https://wa.me/${phoneNumber}?text=${message}`;
+    window.open(url, '_blank');
+  }}
   style={{cursor: "pointer"}}
 >
   <img src="/whatsapp.svg" alt="WhatsApp logo" className="icon" />
